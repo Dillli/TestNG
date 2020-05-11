@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Parallel Testing Suite" parallel="classes" thread-count="6">
+
+	<!-- ###### Below is Based on Classes Level Execution ###### -->
+	<!-- Here we have 4 Tests in Classes Level and we are Defining parallel="classes" -->
+	<!-- thread-count="4" >> 4 Browser Instances will be Launched at a Same Time -->
+	<!-- Test Execution will Execute in Parallel in 4 Browser Instances -->
+	<test name="TestNG Parallel Chrome Tests in Classes Level">
+		<classes>
+			<class name="ParallelExecutionTests.ChromeTest1"/>
+			<class name="ParallelExecutionTests.ChromeTest2"/>
+			
+		
+		</classes>
+	</test>
+	
+	</suite>
